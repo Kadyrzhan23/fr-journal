@@ -1,0 +1,31 @@
+.topBanner {
+    background: var(--green);
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #fff;
+}

@@ -1,0 +1,57 @@
+:root {
+  /* Colors */
+  --green: #1a5c2e;
+  --green-mid: #247a3e;
+  --green-light: #e8f2eb;
+  --green-xlight: #f3f8f4;
+
+  --red: #9b1c1c;
+  --red-light: #fdf0f0;
+
+  --gold: #b5860d;
+  --gold-light: #fdf6e3;
+
+  --ink: #1a1a1a;
+  --ink-mid: #3d3d3d;
+  --ink-soft: #666;
+  --ink-muted: #999;
+
+  --border: #d8d8d8;
+  --border-light: #ebebeb;
+
+  --bg: #fff;
+  --bg-warm: #fafaf8;
+  --bg-section: #f5f5f3;
+
+  /* Fonts */
+  --ff-serif: "Merriweather", Georgia, serif;
+  --ff-sans: "Source Sans 3", system-ui, sans-serif;
+  --ff-mono: "Source Code Pro", monospace;
+
+  /* Layout */
+  --max: 1200px;
+  --nav-h: 56px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
