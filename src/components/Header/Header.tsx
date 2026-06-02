@@ -5,7 +5,6 @@ export const Header = () => {
     return (
         <header className={styles.header}>
             <Banner/>
-
             {/* NAVBAR */}
             <nav className={styles.navbar}>
                 <div className={styles.container}>

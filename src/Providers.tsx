@@ -2,7 +2,7 @@ import type {ReactNode} from "react";
 
 import {Provider} from "react-redux";
 import {store} from "./store/store";
-
+import {HelmetProvider} from "react-helmet-async";
 import {ThemeProvider} from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import {theme} from "./theme";
@@ -17,12 +17,14 @@ type Props = {
 const Providers = ({children}: Props) => {
     return (
         <Provider store={store}>
-            <ThemeProvider theme={theme}>
-                <CssBaseline/>
-                <Layout>
-                    {children}
-                </Layout>
-            </ThemeProvider>
+            <HelmetProvider>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline/>
+                    <Layout>
+                        {children}
+                    </Layout>
+                </ThemeProvider>
+            </HelmetProvider>
         </Provider>
     );
 };
