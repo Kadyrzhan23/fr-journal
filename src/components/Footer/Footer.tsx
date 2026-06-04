@@ -15,7 +15,7 @@ export const Footer = () => {
                             agricultural and medical sciences.
                         </p>
                         <div className={styles.issn}>
-                            ISSN 2790-XXXX (Online) · ISSN 2790-YYYY (Print)
+                            ISSN 2181-7774 (Online) · ISSN 3060-5032 (Print)
                         </div>
                     </div>
 

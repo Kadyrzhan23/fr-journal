@@ -1,28 +1,43 @@
-import type {IAuthor} from "./Author.ts";
-import type {IDiscipline} from "./Discipline.ts";
-
 export interface IArticle {
     _id: string;
-    title: string;
-    description: string;
-    content: string;
     slug: string;
-    doi: string;
-    authors: IAuthor[]
-    discipline: IDiscipline[];
-    volume: number;
-    issue: number;
-    status: "review" | "published" | "archived";
-    seo: {
-        metaTitle: string,
-        metaDescription:string,
-    },
-    coverImage:string;
-    images:[string],
-    pdfUrl:string;
-    views:number;
-    likes:number;
-    downloads:number;
-    createdAt:Date;
-    updatedAt:Date;
+    issueId: string;
+    issueNumber: number;
+    volumeNumber: number;
+    authors: IArticleAuthor[];
+    editorId: string;
+    createdBy: string;
+    status: ArticleStatus;
+    reviewNote: string;
+    title: string;
+    abstract: string;
+    body?: string;
+    pdfUrl: string;
+    topicCode: TopicCode;
+    keywords: string[];
+    doi: string | null;
+    pageStart: number;
+    pageEnd: number;
+    isOpenAccess: boolean;
+    isFeatured: boolean;
+    viewCount: number;
+    downloadCount: number;
+    submittedAt: Date ;
+    publishedAt: Date ;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+export type ArticleStatus = "created" | "submitted" | "revision_requested" |
+    "approved" | "rejected" | "published" | "retracted" | "updated"
+
+export type TopicCode = "chemical" | "biological" | "technical" |
+    "agricultural" | "economic" | "veterinary"
+
+
+export interface IArticleAuthor {
+    userId: string;
+    order: number;
+
+    corresponding: boolean;
 }

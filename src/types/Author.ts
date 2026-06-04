@@ -1,41 +1,28 @@
-export type AuthorStatus = "active" | "inactive" | "blocked";
+export type UserRole = "author" | "admin" | "editor";
 
-export interface IAuthor {
+export interface IUser {
     _id: string;
 
     firstName: string;
     lastName: string;
-    middleName?: string;
 
-    displayName: string;
-    slug: string;
+    email: string;
+    phone: string;
 
-    dateOfBirth: Date;
+    role: UserRole;
 
-    degree: string;
-    specialization: string[];
-    researchAreas: string[];
+    degree: string | null;
+    workplace: string | null;
 
-    orcid?: string;
-    scopusId?: string;
-    googleScholarId?: string;
+    country: string;
+    orcid: string | null;
 
-    workPlace: WorkPlace;
+    avatarUrl: string | null;
 
-    email?: string;
-    phone?: string;
-    avatar?: string;
-    images?: string[];
-    stats: number;
-    status: AuthorStatus;
+    isVerified: boolean;
+
+    lastLoginAt: Date;
+
     createdAt: Date;
     updatedAt: Date;
-}
-
-export interface WorkPlace {
-    name: string;
-    country: string;
-    city?: string;
-    department?: string;
-    position?: string;
 }

@@ -3,12 +3,10 @@
     color: #fff;
     padding: 10px 0;
     overflow: hidden;
-
 }
 
 .container {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -21,24 +19,45 @@
     background: rgba(255,255,255,0.2);
     padding: 3px 10px;
     border-radius: 2px;
-    white-space: nowrap;
     flex-shrink: 0;
 }
 
-.items {
-    display: flex;
-    gap: 32px;
+/* ВИДИМАЯ ОБЛАСТЬ */
+.viewport {
     overflow: hidden;
     white-space: nowrap;
+    width: 100%;
+    position: relative;
 }
 
+/* ДВИЖУЩАЯСЯ ЛЕНТА */
+.track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+
+    animation: scroll 30s linear infinite;
+}
+
+/* элемент */
 .item {
     font-size: 13px;
     opacity: 0.9;
-    cursor: pointer;
+    white-space: nowrap;
 }
 
-.item span {
+.new {
     opacity: 0.6;
     margin-right: 6px;
+    font-size: 11px;
+}
+
+/* АНИМАЦИЯ */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }

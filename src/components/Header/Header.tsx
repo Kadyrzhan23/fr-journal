@@ -1,11 +1,15 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
-import {Banner} from "../Banner";
+import { Banner } from "../Banner";
 
 export const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const closeMenu = () => setMenuOpen(false);
+
     return (
         <header className={styles.header}>
-            <Banner/>
-            {/* NAVBAR */}
+            <Banner />
             <nav className={styles.navbar}>
                 <div className={styles.container}>
 
@@ -16,6 +20,7 @@ export const Header = () => {
                         </div>
                     </div>
 
+                    {/* Desktop nav */}
                     <ul className={styles.nav}>
                         <li><a href="#">Home</a></li>
                         <li className={styles.active}><a href="#">Articles</a></li>
@@ -30,9 +35,35 @@ export const Header = () => {
                         <input type="text" placeholder="Search articles, authors…" />
                     </div>
 
+                    {/* Burger button */}
+                    <button
+                        className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ""}`}
+                        onClick={() => setMenuOpen(prev => !prev)}
+                        aria-label="Toggle menu"
+                    >
+                        <span />
+                        <span />
+                        <span />
+                    </button>
+
                 </div>
             </nav>
 
+            {/* Mobile dropdown menu */}
+            {menuOpen && (
+                <ul className={styles.mobileMenu}>
+                    <li><a href="#" onClick={closeMenu}>Home</a></li>
+                    <li className={styles.active}><a href="#" onClick={closeMenu}>Articles</a></li>
+                    <li><a href="#" onClick={closeMenu}>Issues</a></li>
+                    <li><a href="#" onClick={closeMenu}>Topics</a></li>
+                    <li><a href="#" onClick={closeMenu}>Authors</a></li>
+                    <li><a href="#" onClick={closeMenu}>About</a></li>
+                    <li className={styles.mobileSearch}>
+                        🔍
+                        <input type="text" placeholder="Search articles, authors…" />
+                    </li>
+                </ul>
+            )}
         </header>
     );
 };
