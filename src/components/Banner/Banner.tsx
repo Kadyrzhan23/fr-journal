@@ -1,21 +1,20 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Banner.module.css";
 
 export const Banner = () => {
+    const { t } = useTranslation();
+
     return (
         <div className={styles.topBanner}>
             <div className={styles.container}>
-        <span>
-          AgroMed Science — Open Access · Peer Reviewed · Tashkent,
-          Uzbekistan
-        </span>
+                <span>{t("components.banner.tagline")}</span>
 
                 <div className={styles.links}>
-                    <a href="#">Submit Manuscript</a>
-                    <a href="#">Editorial Board</a>
-                    <a href="#">Login</a>
+                    <a href="#">{t("components.banner.submit")}</a>
+                    <a href="#">{t("components.banner.editorial")}</a>
+                    <a href="#">{t("components.banner.login")}</a>
                 </div>
             </div>
         </div>
     );
 };
-

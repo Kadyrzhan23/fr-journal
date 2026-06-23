@@ -1,0 +1,124 @@
+{
+  "pages": {
+    "main": {
+      "hero": {
+        "readFull": "Read Full Article",
+        "downloadPdf": "Download PDF",
+        "cite": "Cite",
+        "coverImage": "Cover Image",
+        "vol": "Vol.",
+        "issue": "Issue"
+      },
+      "stats": [
+        {
+          "title": "Published Articles",
+          "description": "Across agronomy, veterinary science, plant pathology, and public health"
+        },
+        {
+          "title": "Impact Factor 2025",
+          "description": "CiteScore 5.1 · Indexed in Scopus, PubMed, Web of Science"
+        },
+        {
+          "title": "Avg. Review Time",
+          "description": "From submission to first editorial decision. Rigorous double-blind peer review."
+        }
+      ],
+      "mainGrid": {
+        "latestArticles": "Latest Articles",
+        "browseAll": "Browse all →",
+        "viewFull": "View Full Issue",
+        "mostRead": "Most Read",
+        "views": "views",
+        "announcements": "Announcements",
+        "volume": "Volume",
+        "issue": "Issue"
+      },
+      "topicSection": {
+        "chemicalSciences": "Chemical Sciences",
+        "biologicalSciences": "Biological Sciences",
+        "technicalEngineeringSciences": "Technical & Engineering Sciences",
+        "agriculturalSciences": "Agricultural Sciences",
+        "economicSciences": "Economic Sciences",
+        "veterinarySciences": "Veterinary Sciences",
+        "browseByTopic": "Browse by Topic",
+        "researchAreas": "Research Areas",
+        "articles": "articles"
+      },
+      "forAuthors": {
+        "steps": [
+          {
+            "step": "STEP 01",
+            "title": "Prepare Your Manuscript",
+            "description": "Follow our detailed author guidelines covering formatting, citation style, ethics statements, and data availability requirements.",
+            "linkText": "Download guidelines"
+          },
+          {
+            "step": "STEP 02",
+            "title": "Submit Online",
+            "description": "Use our editorial system for submission and track manuscript status in real time.",
+            "linkText": "Submit manuscript →"
+          },
+          {
+            "step": "STEP 03",
+            "title": "Peer Review & Publication",
+            "description": "All articles undergo double-blind peer review. Accepted papers are published within days.",
+            "linkText": "Review process"
+          }
+        ]
+      }
+    }
+  },
+
+  "widgets": {},
+  "components": {
+    "header": {
+      "nav": {
+        "home": "Home",
+        "articles": "Articles",
+        "issues": "Issues",
+        "topics": "Topics",
+        "authors": "Authors",
+        "about": "About"
+      },
+      "search": {
+        "placeholder": "Search articles, authors…"
+      },
+      "logoSub": "Agricultural & Medical Research"
+    },
+    "banner": {
+      "tagline": "AgroMed Science — Open Access · Peer Reviewed · Tashkent, Uzbekistan",
+      "submit": "Submit Manuscript",
+      "editorial": "Editorial Board",
+      "login": "Login"
+    }
+  },
+  "footer": {
+    "brand": {
+      "desc": "International peer-reviewed open access journal in agricultural and medical sciences"
+    },
+    "journal": {
+      "title": "Journal",
+      "about": "About",
+      "editorialBoard": "Editorial Board",
+      "allIssues": "All Issues",
+      "indexing": "Indexing"
+    },
+    "authors": {
+      "title": "Authors",
+      "submit": "Submit",
+      "guidelines": "Guidelines",
+      "peerReview": "Peer Review",
+      "copyright": "Copyright"
+    },
+    "info": {
+      "title": "Info",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "bottom": {
+      "rights": "© 2026 AgroMed Science. Tashkent, Uzbekistan.",
+      "license": "All content CC BY 4.0"
+    }
+  }
+}

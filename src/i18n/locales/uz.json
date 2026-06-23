@@ -1,0 +1,126 @@
+{
+  "pages": {
+    "main": {
+      "hero": {
+        "readFull": "To'liq o'qish",
+        "downloadPdf": "PDF yuklab olish",
+        "cite": "Iqtibos",
+        "coverImage": "Muqova rasmi",
+        "vol": "Jild",
+        "issue": "Son"
+      },
+      "stats": [
+        {
+          "title": "Nashr etilgan maqolalar",
+          "description": "Agronimiya, veterinariya, o'simlik patologiyasi va jamoat salomatligi bo'yicha"
+        },
+        {
+          "title": "Impakt-faktor 2025",
+          "description": "CiteScore 5.1 · Scopus, PubMed, Web of Science da indekslangan"
+        },
+        {
+          "title": "O'rtacha ko'rib chiqish vaqti",
+          "description": "Topshirishdan birinchi tahririyat qarorigacha. Qat'iy ikki tomonlama ko'r-ko'rona ekspertiza."
+        }
+      ],
+      "mainGrid": {
+        "latestArticles": "So'nggi maqolalar",
+        "browseAll": "Barcha maqolalar →",
+        "viewFull": "To‘liq sonni ko‘rish",
+        "mostRead": "Eng ko‘p o‘qilgan",
+        "views": "o‘qilgan",
+        "announcements": "E'lonlar",
+        "volume": "Jild",
+        "issue": "Son"
+
+      },
+      "topicSection": {
+        "chemicalSciences": "Kimyo fanlari",
+        "biologicalSciences": "Biologiya fanlari",
+        "technicalEngineeringSciences": "Texnika va muhandislik fanlari",
+        "agriculturalSciences": "Qishloq xo‘jaligi fanlari",
+        "economicSciences": "Iqtisodiyot fanlari",
+        "veterinarySciences": "Veterinariya fanlari",
+        "browseByTopic": "Mavzu bo‘yicha ko‘rish",
+        "researchAreas": "Tadqiqot yo‘nalishlari",
+        "articles": "maqola"
+      },
+      "forAuthors": {
+        "steps": [
+          {
+            "step": "QADAM 01",
+            "title": "Maqolangizni tayyorlang",
+            "description": "Mualliflar uchun ko‘rsatmalarga amal qiling: formatlash, havola berish uslubi, nashr etikasi va ma’lumotlar ochiqligi talablari.",
+            "linkText": "Qo‘llanmani yuklab olish"
+          },
+          {
+            "step": "QADAM 02",
+            "title": "Onlayn yuboring",
+            "description": "Maqolani yuborish va uning holatini kuzatish uchun tahririyat tizimidan foydalaning.",
+            "linkText": "Maqolani yuborish →"
+          },
+          {
+            "step": "QADAM 03",
+            "title": "Taqriz va nashr",
+            "description": "Barcha maqolalar ikki tomonlama anonim taqrizdan o‘tadi. Qabul qilingan maqolalar tez orada nashr etiladi.",
+            "linkText": "Taqriz jarayoni"
+          }
+        ]
+      }
+
+    }
+  },
+  "widgets": {
+  },
+  "components": {
+    "header": {
+      "nav": {
+        "home": "Bosh sahifa",
+        "articles": "Maqolalar",
+        "issues": "Sonlar",
+        "topics": "Mavzular",
+        "authors": "Mualliflar",
+        "about": "Jurnal haqida"
+      },
+      "search": {
+        "placeholder": "Maqola, muallif qidirish…"
+      },
+      "logoSub": "Qishloq xo'jaligi va tibbiy tadqiqotlar"
+    },
+    "banner": {
+      "tagline": "AgroMed Science — Ochiq kirish · Ekspert tekshiruvi · Toshkent, O'zbekiston",
+      "submit": "Qo'lyozma yuborish",
+      "editorial": "Tahririyat kengashi",
+      "login": "Kirish"
+    },
+    "footer": {
+      "brand": {
+        "desc": "Qishloq xo‘jaligi va tibbiyot fanlariga bag‘ishlangan xalqaro ochiq kirishli, ekspertlar tomonidan ko‘rib chiqiladigan jurnal"
+      },
+      "journal": {
+        "title": "Jurnal",
+        "about": "Jurnal haqida",
+        "editorialBoard": "Tahririyat kengashi",
+        "allIssues": "Barcha sonlar",
+        "indexing": "Indekslash"
+      },
+      "authors": {
+        "title": "Mualliflar",
+        "submit": "Yuborish",
+        "guidelines": "Ko‘rsatmalar",
+        "peerReview": "Taqriz jarayoni",
+        "copyright": "Mualliflik huquqi"
+      },
+      "info": {
+        "title": "Ma'lumot",
+        "contact": "Aloqa",
+        "privacy": "Maxfiylik",
+        "terms": "Foydalanish shartlari"
+      },
+      "bottom": {
+        "rights": "© 2026 AgroMed Science. Toshkent, O‘zbekiston.",
+        "license": "Barcha kontent CC BY 4.0"
+      }
+    }
+  }
+}

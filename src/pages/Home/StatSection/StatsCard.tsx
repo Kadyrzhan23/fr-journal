@@ -1,7 +1,7 @@
 import styles from './StatSection.module.css';
 
 interface Props {
-    value: string;
+    value: string | number;
     title: string;
     description: string;
 }

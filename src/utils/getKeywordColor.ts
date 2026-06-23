@@ -1,4 +1,4 @@
-export default function (keyword:string): string {
+export default function getKeywordColor (keyword:string): string {
     switch (keyword) {
         case "Research Article" :
             return "badgeGreen"

@@ -31,6 +31,8 @@
   /* Layout */
   --max: 1200px;
   --nav-h: 56px;
+  --container-max: var(--max);
+  --transition: 0.2s ease;
 }
 
 

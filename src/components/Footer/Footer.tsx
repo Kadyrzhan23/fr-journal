@@ -1,6 +1,9 @@
 import styles from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -9,11 +12,14 @@ export const Footer = () => {
 
                     {/* BRAND */}
                     <div className={styles.brand}>
-                        <div className={styles.name}>AgroMed Science</div>
+                        <div className={styles.name}>
+                            AgroMed Science
+                        </div>
+
                         <p className={styles.desc}>
-                            International peer-reviewed open access journal dedicated to
-                            agricultural and medical sciences.
+                            {t("components.footer.brand.desc")}
                         </p>
+
                         <div className={styles.issn}>
                             ISSN 2181-7774 (Online) · ISSN 3060-5032 (Print)
                         </div>
@@ -21,33 +27,42 @@ export const Footer = () => {
 
                     {/* JOURNAL */}
                     <div>
-                        <div className={styles.title}>Journal</div>
+                        <div className={styles.title}>
+                            {t("components.footer.journal.title")}
+                        </div>
+
                         <div className={styles.links}>
-                            <a href="#">About</a>
-                            <a href="#">Editorial Board</a>
-                            <a href="#">All Issues</a>
-                            <a href="#">Indexing</a>
+                            <a href="#">{t("components.footer.journal.about")}</a>
+                            <a href="#">{t("components.footer.journal.editorialBoard")}</a>
+                            <a href="#">{t("components.footer.journal.allIssues")}</a>
+                            <a href="#">{t("components.footer.journal.indexing")}</a>
                         </div>
                     </div>
 
                     {/* AUTHORS */}
                     <div>
-                        <div className={styles.title}>Authors</div>
+                        <div className={styles.title}>
+                            {t("components.footer.authors.title")}
+                        </div>
+
                         <div className={styles.links}>
-                            <a href="#">Submit</a>
-                            <a href="#">Guidelines</a>
-                            <a href="#">Peer Review</a>
-                            <a href="#">Copyright</a>
+                            <a href="#">{t("components.footer.authors.submit")}</a>
+                            <a href="#">{t("components.footer.authors.guidelines")}</a>
+                            <a href="#">{t("components.footer.authors.peerReview")}</a>
+                            <a href="#">{t("components.footer.authors.copyright")}</a>
                         </div>
                     </div>
 
                     {/* INFO */}
                     <div>
-                        <div className={styles.title}>Info</div>
+                        <div className={styles.title}>
+                            {t("components.footer.info.title")}
+                        </div>
+
                         <div className={styles.links}>
-                            <a href="#">Contact</a>
-                            <a href="#">Privacy</a>
-                            <a href="#">Terms</a>
+                            <a href="#">{t("components.footer.info.contact")}</a>
+                            <a href="#">{t("components.footer.info.privacy")}</a>
+                            <a href="#">{t("components.footer.info.terms")}</a>
                         </div>
                     </div>
 
@@ -55,12 +70,11 @@ export const Footer = () => {
 
                 {/* BOTTOM */}
                 <div className={styles.bottom}>
-                    <span>© 2026 AgroMed Science. Tashkent, Uzbekistan.</span>
-                    <span>All content CC BY 4.0</span>
+                    <span>{t("components.footer.bottom.rights")}</span>
+                    <span>{t("components.footer.bottom.license")}</span>
                 </div>
 
             </div>
         </footer>
     );
 };
-

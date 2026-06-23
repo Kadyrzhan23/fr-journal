@@ -41,7 +41,7 @@
 .navbar {
     background: #fff;
     border-bottom: 2px solid var(--green);
-    height: var(--nav-h);
+    /*height: var(--nav-h);*/
 }
 
 .logo {
@@ -175,11 +175,34 @@
     width: 100%;
     outline: none;
 }
+.mobileLang {
+    display: flex;
+    padding: 10px 0 4px;
+    border-bottom: none;
+}
+.desktopLangSwitcher {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
 
-/* Responsive breakpoint */
 @media (max-width: 768px) {
     .nav,
-    .search {
+    .search,
+    .desktopLangSwitcher {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+/* Скрываем десктопные элементы */
+@media (max-width: 980px) {
+    .nav,
+    .search,
+    .desktopLangSwitcher {
         display: none;
     }
 
